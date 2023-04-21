@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+	<style>
+		body{
+			background: url("https://media.istockphoto.com/id/1386156141/photo/the-night-view-of-the-city-in-front-of-the-asphalt-road.jpg?b=1&s=170667a&w=0&k=20&c=4GQMyc40vH3zSnBrdBSp8jwWE6BM3EPMUmxHQRhlXB4=");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.login{
+			width: 300px;
+			height: 400px;
+			background-color: rgba(10, 10, 10, 0.534);
+			display: block;
+			padding: 20px;
+			position: relative;
+			left: 450px;
+			top: 100px;
+			font-size: 20px;
+			border-top-right-radius: 28px;
+			border-bottom-left-radius: 28px;
+			color: white;
+		}
+		h1{
+			text-align: center;
+			color: blue;
+		}
+		#uname,#pas{
+			width: 260px;
+			height: 25px;
+			border: 0px;
+			background-color: none;
+			color: white;
+			/*opacity: .2;*/
+			text-decoration: underline;
+			border-bottom: 4px solid white;
+			
+		}
+		#submit{
+			width: 264px;
+			height: 25px;
+			border: none;
+			border-radius: 12.5px;
+			background-color: rgb(21, 131, 221);
+			transition: background-color 2s;
+		}
+		span{
+			margin-left: 20px;
+			font-size: 16px;
+			
+		}
+		a{
+			text-decoration:none;
+		}
+		.button{
+			display: grid;
+			grid-template-columns: 130px 135px;
+			grid-template-rows: 30px;
+		}
+		#reset{
+			width:120px;
+			height: 25px;
+			background-color: rgba(255, 0, 0, 0.801);
+			border: none;
+			transition: background-color 2s;
+		}
+		a:hover{
+			color: blue;
+		}
+		#reset:hover{
+			background-color: rgb(73, 201, 73);
+		}
+		#submit:hover{
+			background-color: rgb(4, 33, 85);
+		}
+		h5{
+			color: rgb(138, 13, 13);
+			padding: 0px;
+			height: 10px;
+		}
+		img{
+			clip-path: circle(50% at 50% 50%);
+			position: absolute;
+			width: 100px;
+			left: 120px;
+			top: -50px;
+		}
+		label{
+			color: teal;
+		}
+	</style>
+</head>
+<body>
+	<div class="login">
+		<img src="https://thumbs.dreamstime.com/b/icon-profile-circle-not-shadow-color-dark-blue-icon-profile-circle-not-shadow-color-dark-blue-background-194699290.jpg" alt="NotLoad">
+		<h1>Login Here</h1>
+		<h5>* For required fields</h5>
+		<form action="#">
+			<label for="uname">Username* </label><br>
+			<input type="text" name="uname" id="uname" placeholder="User name" required aria-hidden="true"><br><br>
+			<label for="pas">Password* </label><br>
+			<input type="password" name="pas" id="pas" placeholder="Password" required aria-hidden="true"><br><br>
+			
+			<button type="submit" id="submit">Submit</button><br><br>
+			<div class="button">
+				<div class="item" id="item-1">
+					<button type="reset" id="reset">Reset</button>
+				</div>
+				<div class="item" id="item-2">
+					<span><a href="#">Forgot password?</a></span>
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
